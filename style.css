@@ -7,10 +7,13 @@ body {
   width: 80vw;
   margin: 0 auto;
 }
-.main-container{
-    width: 80%;
-    margin: 0 auto;
-    /* border: 2px solid #0756a1; */
+.main-container {
+  width: 80%;
+  margin: 0 auto;
+  /* border: 2px solid #0756a1; */
+}
+img {
+  width: 100%;
 }
 /* banner section */
 .banner-section {
@@ -54,71 +57,71 @@ body {
 }
 
 /* About Section */
-.about-section{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10% 0;
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10% 0;
 }
-.about-image{
-    width: 50%;
+.about-image {
+  width: 50%;
 }
-.about-image img{
-    width: 100%;
+.about-image img {
+  width: 100%;
 }
-.about-article{
-    width: 45%;
-    margin-top: 10%;
+.about-article {
+  width: 45%;
+  margin-top: 10%;
 }
-.title{
-    font-size: 3vw;
-    margin-bottom: 5%;
-    line-height: 100%;
+.title {
+  font-size: 3vw;
+  margin-bottom: 5%;
+  line-height: 100%;
 }
-.description{
-    font-size: 1vw;
-    margin-bottom: 5%;
-    line-height: 150%;
+.description {
+  font-size: 1vw;
+  margin-bottom: 5%;
+  line-height: 150%;
 }
-ul{
-    font-size: 1vw;
-    line-height: 150%;
+ul {
+  font-size: 1vw;
+  line-height: 150%;
 }
 /* service section */
-.ser-top-items{
+.ser-top-items {
   display: grid;
   grid-template-columns: repeat(4, 23%);
   justify-content: space-around;
   margin-bottom: 5%;
 }
-.service-section h2{
+.service-section h2 {
   text-align: center;
 }
-.ser-item{
+.ser-item {
   padding: 3%;
   text-align: center;
   border-radius: 15px;
   box-shadow: 0px 7px 10px 0px #0756a193;
 }
-.ser-item h3{
+.ser-item h3 {
   font-size: 1.2vw;
   margin-bottom: 2%;
 }
-.ser-item p{
+.ser-item p {
   font-size: 1vw;
   margin-bottom: 10px;
 }
-.ser-item img{
+.ser-item img {
   width: 30%;
   margin-top: 10px;
 }
-.ser-item:hover{
+.ser-item:hover {
   box-shadow: 0px 7px 10px 0px #0756a1ce;
 }
-.sre-bottom-items{
+.sre-bottom-items {
   height: 20vw;
-  background: url("./assets/images/watch.png"), 
-  linear-gradient(to left, rgba(0, 0, 0, 0.315), rgb(5, 62, 116)) no-repeat;
+  background: url("./assets/images/watch.png"),
+    linear-gradient(to left, rgba(0, 0, 0, 0.315), rgb(5, 62, 116)) no-repeat;
   background-blend-mode: overlay;
   background-size: cover;
   overflow: hidden;
@@ -127,15 +130,56 @@ ul{
   margin: 10% 00;
   box-shadow: 0px 7px 10px 0px #0000005b;
 }
-.sre-bottom-items h3{
+.sre-bottom-items h3 {
   font-size: 3vw;
   color: white;
   margin-bottom: 10px;
 }
-.ser-btn{
+.ser-btn {
   width: 15%;
 }
-
+/* Blog Section */
+.blog-section {
+  background-color: #0756a1;
+  border-radius: 2vw;
+  padding: 2%;
+}
+.section-title {
+  color: white;
+  margin-bottom: 3%;
+  font-size: 3vw;
+}
+.line {
+  color: white;
+  margin-bottom: 5%;
+}
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  justify-content: space-around;
+}
+.blog-post {
+  margin-bottom: 10%;
+  background-color: white;
+  border-radius: 5%;
+  overflow: hidden;
+  box-shadow: 0px 0px 28px 0px black;
+}
+.blog-article {
+  padding: 5%;
+}
+.blog-article h3 {
+  color: #0756a1;
+  margin: 3% 0;
+  font-size: 1.3vw;
+}
+.blog-article p {
+  font-size: 1vw;
+  margin-bottom: 3%;
+}
+.blog-article a {
+  font-size: 1vw;
+}
 /*================================================================================
                         Responsive Style
 ==============================================================================*/
@@ -144,10 +188,10 @@ ul{
     Large Device
 ================ */
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    body{
-        width: 100vw;
-    }
-/* Banner section */
+  body {
+    width: 100vw;
+  }
+  /* Banner section */
   .banner-content {
     width: 100%;
     text-align: center;
@@ -156,22 +200,23 @@ ul{
   .banner-title {
     font-size: 6.5vw;
   }
-  .banner-description{
+  .banner-description {
     font-size: 2vw;
   }
   .banner-section {
     height: 60vw;
-    background-image: url("./assets/images/banner/banner3.png"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.692));
+    background-image: url("./assets/images/banner/banner3.png"),
+      linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.692));
     background-blend-mode: overlay;
   }
   /* About Section */
-  .title{
+  .title {
     font-size: 4.5vw;
   }
-  .description{
+  .description {
     font-size: 1.5vw;
   }
-  ul{
+  ul {
     font-size: 1.5vw;
   }
 }
@@ -179,7 +224,7 @@ ul{
    Medium Device 
 ====================*/
 @media screen and (min-width: 577px) and (max-width: 768px) {
-  body{
+  body {
     width: 100%;
   }
   /* banner section */
@@ -187,56 +232,75 @@ ul{
     width: 100%;
     text-align: center;
     padding: 0 8%;
-    
   }
   .banner-title {
     font-size: 6vw;
   }
-  .banner-description{
+  .banner-description {
     font-size: 2vw;
   }
   .banner-section {
     height: 60vw;
-    background-image: url("./assets/images/banner/banner3.png"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.692));
+    background-image: url("./assets/images/banner/banner3.png"),
+      linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.692));
     background-blend-mode: overlay;
-    
   }
-  .banner-btn{
+  .banner-btn {
     font-size: 2vw;
   }
   /* about section */
-  .title{
+  .title {
     font-size: 4.5vw;
   }
-  .description{
+  .description {
     font-size: 1.5vw;
   }
-  ul{
+  ul {
     font-size: 1.5vw;
   }
   /* service section  */
-  .ser-top-items{
+  .ser-top-items {
     grid-template-columns: repeat(2, 45%);
     row-gap: 10%;
   }
-  .ser-item h3{
+  .ser-item h3 {
     font-size: 3.5vw;
   }
-  .ser-item p{
+  .ser-item p {
     font-size: 2.5vw;
   }
-  .sre-bottom-items{
+  .sre-bottom-items {
     height: 20vw;
   }
-  .ser-btn{
+  .ser-btn {
     width: 30%;
+  }
+  /* blog section */
+  .blog-section {
+    background-color: #0756a1;
+    border-radius: 2vw;
+    padding: 2%;
+  }
+  .blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+  }
+  .blog-article h3 {
+    margin: 3% 0;
+    font-size: 1.9vw;
+  }
+  .blog-article p {
+    font-size: 1.6vw;
+  }
+  .blog-article a {
+    font-size: 1.6vw;
   }
 }
 /* ===============
     Small Device
 ================= */
 @media screen and (max-width: 576px) {
-  body{
+  body {
     width: 100%;
   }
   /* banner section */
@@ -244,68 +308,88 @@ ul{
     width: 100%;
     text-align: center;
     padding: 0 8%;
-    
   }
   .banner-title {
     font-size: 7vw;
   }
-  .banner-description{
+  .banner-description {
     font-size: 3vw;
   }
   .banner-section {
     height: 100vw;
-    background-image: url("./assets/images/banner/banner3.png"), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.692));
+    background-image: url("./assets/images/banner/banner3.png"),
+      linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.692));
     background-blend-mode: overlay;
-    
   }
-  .banner-btn{
+  .banner-btn {
     font-size: 3vw;
     width: 90%;
   }
   /* about section */
-  .about-section{
+  .about-section {
     flex-direction: column;
   }
-  .about-image{
+  .about-image {
     width: 100%;
   }
-  .about-article{
+  .about-article {
     width: 100%;
   }
-  .title{
+  .title {
     font-size: 7.5vw;
     text-align: center;
   }
-  .description{
+  .description {
     font-size: 4.5vw;
     text-align: justify;
   }
-  ul{
+  ul {
     font-size: 1.5vw;
     font-size: 3.5vw;
   }
   /* service section  */
-  .ser-top-items{
+  .ser-top-items {
     grid-template-columns: repeat(1, 100%);
     row-gap: 5%;
   }
-  .ser-item h3{
+  .ser-item h3 {
     font-size: 5.5vw;
   }
-  .ser-item p{
+  .ser-item p {
     font-size: 3.5vw;
   }
-  .sre-bottom-items{
+  .sre-bottom-items {
     height: 40vw;
     margin-top: 46%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .sre-bottom-items h3{
+  .sre-bottom-items h3 {
     font-size: 6vw;
   }
-  .ser-btn{
+  .ser-btn {
     width: 50%;
+  }
+  /* blog section */
+  .section-title {
+    font-size: 5vw;
+    text-align: center;
+  }
+  .blogs {
+    display: grid;
+    grid-template-columns: repeat(1, 95%);
+  }
+  .blog-article h3 {
+    margin: 3% 0;
+    font-size: 4vw;
+    text-align: center;
+  }
+  .blog-article p {
+    font-size: 3.5vw;
+    text-align: center;
+  }
+  .blog-article a {
+    font-size: 3.6vw;
   }
 }
