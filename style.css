@@ -84,10 +84,61 @@ ul{
     font-size: 1vw;
     line-height: 150%;
 }
+/* service section */
+.ser-top-items{
+  display: grid;
+  grid-template-columns: repeat(4, 23%);
+  justify-content: space-around;
+  margin-bottom: 5%;
+}
+.service-section h2{
+  text-align: center;
+}
+.ser-item{
+  padding: 3%;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0px 7px 10px 0px #0756a193;
+}
+.ser-item h3{
+  font-size: 1.2vw;
+  margin-bottom: 2%;
+}
+.ser-item p{
+  font-size: 1vw;
+  margin-bottom: 10px;
+}
+.ser-item img{
+  width: 30%;
+  margin-top: 10px;
+}
+.ser-item:hover{
+  box-shadow: 0px 7px 10px 0px #0756a1ce;
+}
+.sre-bottom-items{
+  height: 20vw;
+  background: url("./assets/images/watch.png"), 
+  linear-gradient(to left, rgba(0, 0, 0, 0.315), rgb(5, 62, 116)) no-repeat;
+  background-blend-mode: overlay;
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 3%;
+  margin: 10% 00;
+  box-shadow: 0px 7px 10px 0px #0000005b;
+}
+.sre-bottom-items h3{
+  font-size: 3vw;
+  color: white;
+  margin-bottom: 10px;
+}
+.ser-btn{
+  width: 15%;
+}
 
-/* ================================================================================
+/*================================================================================
                         Responsive Style
-================================================================================ */
+==============================================================================*/
 
 /* ==============
     Large Device
@@ -125,7 +176,7 @@ ul{
   }
 }
 /*==================
-   tab Device 
+   Medium Device 
 ====================*/
 @media screen and (min-width: 577px) and (max-width: 768px) {
   body{
@@ -162,6 +213,23 @@ ul{
   }
   ul{
     font-size: 1.5vw;
+  }
+  /* service section  */
+  .ser-top-items{
+    grid-template-columns: repeat(2, 45%);
+    row-gap: 10%;
+  }
+  .ser-item h3{
+    font-size: 3.5vw;
+  }
+  .ser-item p{
+    font-size: 2.5vw;
+  }
+  .sre-bottom-items{
+    height: 20vw;
+  }
+  .ser-btn{
+    width: 30%;
   }
 }
 /* ===============
@@ -215,5 +283,29 @@ ul{
   ul{
     font-size: 1.5vw;
     font-size: 3.5vw;
+  }
+  /* service section  */
+  .ser-top-items{
+    grid-template-columns: repeat(1, 100%);
+    row-gap: 5%;
+  }
+  .ser-item h3{
+    font-size: 5.5vw;
+  }
+  .ser-item p{
+    font-size: 3.5vw;
+  }
+  .sre-bottom-items{
+    height: 40vw;
+    margin-top: 46%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sre-bottom-items h3{
+    font-size: 6vw;
+  }
+  .ser-btn{
+    width: 50%;
   }
 }
